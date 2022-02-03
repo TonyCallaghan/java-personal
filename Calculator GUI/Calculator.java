@@ -24,19 +24,19 @@ public class Calculator implements ActionListener  {
 	
 	Calculator () {
 		//Set up the JFrame
-		frame = new JFrame("Calculator");						          // new Frame - set title as calc
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	// if this was missing, program would not close
-		// frame.setExtendedState(JFrame.MAXIMIZED_BOTH); 		// max the screen
-		frame.setSize(420, 560); 								              // set size to this for now
-		frame.setLayout(null);									              // using grid layout
-		frame.getContentPane().setBackground(bGround); 		  	// set background color
+		frame = new JFrame("Calculator");						// new Frame - set title as calc
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);				// if this was missing, program would not close
+		// frame.setExtendedState(JFrame.MAXIMIZED_BOTH); 				// max the screen
+		frame.setSize(420, 560); 							// set size to this for now
+		frame.setLayout(null);								// using grid layout
+		frame.getContentPane().setBackground(bGround); 		  			// set background color
 		
 		// Display the text
 		textfield = new JTextField("0");
-		textfield.setBounds(50,25,300,50);					        	// Position x, y, length, width
-		textfield.setFont(hel);								              	// Use Helvetica
-		textfield.setHorizontalAlignment(JTextField.CENTER);	// Center align the input
-		textfield.setEditable(false); 					          		// Doesn't allow input - only from buttons
+		textfield.setBounds(50,25,300,50);					       	// Position x, y, length, width
+		textfield.setFont(hel);								// Use Helvetica
+		textfield.setHorizontalAlignment(JTextField.CENTER);				// Center align the input
+		textfield.setEditable(false); 					          	// Doesn't allow input - only from buttons
 		
 		// Button - Operators
 		addButton = new JButton("+");
@@ -60,7 +60,7 @@ public class Calculator implements ActionListener  {
 		for(int i = 0; i < 8; i++) {
 			funcButtons[i].addActionListener(this);
 			funcButtons[i].setFont(hel);
-			funcButtons[i].setFocusable(false);			        		// Removes annoying default
+			funcButtons[i].setFocusable(false);			        	// Removes annoying default
 			funcButtons[i].setForeground(bGround);
 			funcButtons[i].setBackground(Color.WHITE);
 			
@@ -109,7 +109,7 @@ public class Calculator implements ActionListener  {
 		frame.add(delButton);
 		frame.add(clrButton);
 		frame.add(textfield);
-		frame.setVisible(true);						          			// Required for window to open
+		frame.setVisible(true);						          	// Required for window to open
 	}
 
 	public static void main(String[] args) {
