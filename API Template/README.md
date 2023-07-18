@@ -3,7 +3,7 @@
 ## Overview
 - Restful API that performs `GET` `POST` `PATCH` & `DELETE`.
 - To be used as future reference.
-- [Unit tests](./API%20Template/src/test/java/com/tonycallaghan/restfulAPI/ApplicationTests.java) for additional coverage.
+- [Unit tests](https://github.com/TonyCallaghan/java-personal/blob/main/API%20Template/src/test/java/com/tonycallaghan/restfulAPI/ApplicationTests.java) for additional coverage.
   
 ## Resources
  - [Spring Boot 3.0.8.](https://start.spring.io/)
